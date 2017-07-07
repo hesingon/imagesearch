@@ -14,5 +14,12 @@ HistorySchema.pre('save', function(next){
 })
 
 var History = mongoose.model('history', HistorySchema)
+//In face this is not a good name because a collection named 
+//histories will be automatically created by mongodb. The name 
+//should be a collection level.
+
+//database name: history (not image search)
+//collection name: search ==> searches
+
 
 module.exports = History;
