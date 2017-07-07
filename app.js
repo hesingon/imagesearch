@@ -9,7 +9,7 @@ const app = express()
 
 var History = require('./models/history')
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/image_search', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/image_search', {
     useMongoClient: true,
 })
 
@@ -20,7 +20,7 @@ app.get('/api/image/:searchVal*', function(req, res){
     var searchStr = req.params.searchVal;
     var offset = req.query.offset; 
     //query are the parameters contained in the url string
-    console.log(offset)
+    //console.log(offset)
     
     var newSearch = History({
         searchStr: searchStr
