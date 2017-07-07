@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser')
-const cors = require('CORS')
+const cors = require('cors')
 const mongoose = require('mongoose')
 const bing = require('node-bing-api')({ accKey: "db63791f74064c3ca3a65570902162f5" });
 //Extracted from youtube tutorial's account key
