@@ -4,7 +4,8 @@
   "description": "FCC most difficult API project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "engines": {
     "node": "6.10.3",
@@ -22,7 +23,9 @@
   "homepage": "https://github.com/hesingon/imagesearch#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
     "express": "^4.15.3",
-    "mongoose": "^4.11.1"
+    "mongoose": "^4.11.1",
+    "node-bing-api": "^3.2.1"
   }
 }
